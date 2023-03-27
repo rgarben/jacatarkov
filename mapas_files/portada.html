@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/portada.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            img.banner{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 1000px;
+                height: 220px;
+            }
+            p.barraBotones{
+                align-items: center;
+            }
+            .principal {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalPrincipal.png);
+            }
+            .principal:hover {
+                background-image: url(botones/botonpasarPrincipal.png);
+            }
+            .principal:active {
+                background-image: url(botones/botonpulsarPrincipal.png);
+            }
+
+            .armas {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalArmas.png);
+            }
+            .armas:hover {
+                background-image: url(botones/botonpasarArmas.png);
+            }
+            .armas:active {
+                background-image: url(botones/botonpulsarArmas.png);
+            }
+
+            .balas {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalBalas.png);
+            }
+            .balas:hover {
+                background-image: url(botones/botonpasarBalas.png);
+            }
+            .balas:active {
+                background-image: url(botones/botonpulsarBalas.png);
+            }
+
+            .equipo {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalEquipo.png);
+            }
+            .equipo:hover {
+                background-image: url(botones/botonpasarEquipo.png);
+            }
+            .equipo:active {
+                background-image: url(botones/botonpulsarEquipo.png);
+            }
+
+            .mapas {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalMapas.png);
+            }
+            .mapas:hover {
+                background-image: url(botones/botonpasarMapas.png);
+            }
+            .mapas:active {
+                background-image: url(botones/botonpulsarMapas.png);
+            }
+
+            .refugio {
+                height: 50px;
+                width: 150px;
+                background-image: url(botones/botonnormalRefugio.png);
+            }
+            .refugio:hover {
+                background-image: url(botones/botonpasarRefugio.png);
+            }
+            .refugio:active {
+                background-image: url(botones/botonpulsarRefugio.png);
+            }
+
+        </style>
+    </head>
+    <body>       
+        <img class="banner" src="./portadaTalkov.jpg">
+        <br>
+        <p align="center" class="barraBotones">
+            <a href="http://127.0.0.1:5500/principal.html" target="principal"><img class="principal"></a>
+            <a href="http://127.0.0.1:5500/armas.html" target="principal"><img class="armas"></a>
+            <a href="http://127.0.0.1:5500/balas.html" target="principal"><img class="balas"></a>
+            <a href="http://127.0.0.1:5500/equipo.html" target="principal"><img class="equipo"></a>
+            <a href="http://127.0.0.1:5500/principal.html" target="principal"><img class="mapas"></a>
+            <a href="http://127.0.0.1:5500/principal.html" target="principal"><img class="refugio"></a>
+        </p>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

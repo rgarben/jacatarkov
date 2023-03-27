@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>        
+            <style>
+
+                form, form ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 25px 0px 0px;gap: 28px;
+                }
+                form ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 28px;
+                }
+                form li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap:12px
+                }
+
+
+                .input{
+                    width: 400px;
+                    background-color: rgb(199, 189, 189);
+                }
+
+                .checkbox{
+                    display: flex;
+                    justify-content: start;
+                    gap: 12px;}
+
+                textarea{
+                    width: 400px;
+                    height: 200px;
+                    background-color: rgb(199, 189, 189);
+                }
+
+                fieldset{
+                    border: 4px solid rgb(0, 119, 255);
+                    background: #CCC;
+                }
+                span{
+                    color: blueviolet;
+                }
+
+            </style>
+    </head>
+    <body>
+        <form action="mailto:xxx@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <h2>Rellenar formulario para unirse al club:</h2>
+                <ul>
+                    <li>
+                        <label id="Nombre" for="Nombre">Nick:</label>
+                        <input class="input" id="Nombre" type="text"required width="300px">
+                    </li>
+                    <li>
+                        <label id="mail" for="mail">E-mail:</label>
+                        <input class="input" id="mail" type="text" name="mail" placeholder="xxx@gmail.com" required 
+                        pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+                    </li>
+                    <li>
+                        <label id="Mensaje" for="Mensaje">Porque quieres unirte:<span>*cuentanos tu experiencia en otros juegos</span></label>
+                        <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <input id="check" type="checkbox" required >
+                            <a href="#">Aceptar terminos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <input id="check" type="checkbox" required >
+                            <a href="#">Avisarme cuando revisen mi formulario</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="contactar"></label>
+                        <button style="background-color: rgb(67, 176, 190) ;" type="submit">ENVIAR FORMULARIO</button>
+                    </li>
+                    <li>
+                        <label for="reset"></label>
+                        <button style="background-color: rgb(184, 66, 101) ;" type="reset">Reiniciar</button>
+                    </li>
+            </ul>
+        </fieldset>
+        </form>
+    </body>
+</html>
